@@ -6,11 +6,15 @@ describe('Função de Fatorial', () => {
         expect(fatorial(0)).toBe(1);
     });
 
+    test('Deve retornar 1 quando o número é 1', () => {
+        expect(fatorial(1)).toBe(1);
+    });
+
     test('Deve retornar o fatorial correto para um número positivo', () => {
         expect(fatorial(5)).toBe(120); 
     });
 
-    test('Deve retornar uma mensagem de erro para números negativos', () => {
-        expect(fatorial(-5)).toBe("Fatorial não é definido para números negativos.");
+    test('Deve lançar uma exceção para números negativos', () => {
+        expect(() => fatorial(-5)).toThrow("Erro: Não existe fatorial de número negativo");
     });
 });
