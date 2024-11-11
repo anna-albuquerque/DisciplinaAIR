@@ -1,5 +1,5 @@
 // fatorial.test.js
-const fatorial = require('./fatorial'); 
+const fatorial = require('./fatorial');
 
 describe('Função de Fatorial', () => {
     test('Deve retornar 1 quando o número é 0', () => {

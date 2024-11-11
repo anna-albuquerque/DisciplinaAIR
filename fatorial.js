@@ -12,6 +12,4 @@ function fatorial(n) {
     return resultado;
 }
 
-// Exemplo de uso:
-const numero = 5;
-console.log(`O fatorial de ${numero} é: ${fatorial(numero)}`);
+module.exports = fatorial;
