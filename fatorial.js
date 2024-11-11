@@ -1,6 +1,6 @@
 function fatorial(n) {
     if (n < 0) {
-        return "Fatorial não é definido para números negativos.";
+        throw new Error("Erro: Não existe fatorial de número negativo");
     }
     if (n === 0 || n === 1) {
         return 1;
