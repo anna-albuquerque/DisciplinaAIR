@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "**Como executar os testes**   No terminal, execute o código:",
   "main": "fatorial.js",
+  "type": "module",
   "scripts": {
     "test": "jest"
   },
   "keywords": [],
-  "author": "",
+  "author": "Anna Carolinne",
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^29.5.14",
