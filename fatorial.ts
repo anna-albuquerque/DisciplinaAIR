@@ -1,4 +1,4 @@
-function fatorial(n) {
+function fatorial(n: number): number {
     if (n < 0) {
         throw new Error("Erro: Não existe fatorial de número negativo");
     }
@@ -12,4 +12,4 @@ function fatorial(n) {
     return resultado;
 }
 
-module.exports = fatorial;
+export default fatorial;
