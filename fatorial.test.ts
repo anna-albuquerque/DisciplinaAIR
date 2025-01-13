@@ -1,4 +1,4 @@
-import fatorial from './fatorial.js';
+import fatorial from './fatorial';
 
 describe('Função de Fatorial', () => {
     test('Deve retornar 1 quando o número é 0', () => {
