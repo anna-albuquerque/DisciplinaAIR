@@ -1,31 +1,23 @@
+import { Produto } from './produto';
+
 class Eletronico extends Produto {
-    precoBase: number;
-    taxa: number;
+  constructor(nome: string, precoBase: number, public taxa: number) {
+    super(nome, precoBase); // Passa os dois argumentos para o construtor da classe base
+  }
 
-    constructor(nome: string, precoBase: number, taxa: number) {
-        super(nome);
-        this.precoBase = precoBase;
-        this.taxa = taxa;
-    }
-
-    calcularPreco(): number {
-        return this.precoBase * (1 + this.taxa);
-    }
+  calcularPreco(): number {
+    return this.precoBase * (1 + this.taxa); // Aplica a taxa
+  }
 }
 
 class Roupa extends Produto {
-    precoBase: number;
-    desconto: number;
+  constructor(nome: string, precoBase: number, public taxa: number) {
+    super(nome, precoBase); // Passa os dois argumentos para o construtor da classe base
+  }
 
-    constructor(nome: string, precoBase: number, desconto: number) {
-        super(nome);
-        this.precoBase = precoBase;
-        this.desconto = desconto;
-    }
-
-    calcularPreco(): number {
-        return this.precoBase * (1 - this.desconto);
-    }
+  calcularPreco(): number {
+    return this.precoBase * (1 + this.taxa); // Aplica a taxa
+  }
 }
 
 export { Eletronico, Roupa };

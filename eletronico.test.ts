@@ -1,4 +1,5 @@
-import { Eletronico, Roupa, Produto } from './eletronico';
+import { Produto } from "./produto";
+import { Eletronico, Roupa } from './eletronico';
 
 test('deve instanciar e alterar atributos de Eletronico e Roupa e testar metodo estatico', () => {
   const celular = new Eletronico("Smartphone", 1000, 0.15);
