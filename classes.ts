@@ -25,3 +25,5 @@ class Filme implements Descritivo {
         return `${this.titulo}, dirigido por ${this.diretor}.`;
     }
 }
+
+export { Filme, Livro };

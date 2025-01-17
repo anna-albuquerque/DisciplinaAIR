@@ -27,3 +27,5 @@ class Roupa extends Produto {
         return this.precoBase * (1 - this.desconto);
     }
 }
+
+export { Eletronico, Roupa };
