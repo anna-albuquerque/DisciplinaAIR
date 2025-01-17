@@ -1,0 +1,3 @@
+interface Descritivo {
+    descricao(): string;
+}
